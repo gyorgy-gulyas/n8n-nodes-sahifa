@@ -1,0 +1,61 @@
+{
+	"name": "n8n-nodes-sahifa",
+	"version": "1.0.0",
+	"description": "n8n node for Sahifa: HTML or URL to PDF and screenshots with Arabic and right-to-left support, rendered in Saudi Arabia",
+	"license": "MIT",
+	"homepage": "https://github.com/gyorgy-gulyas/n8n-nodes-sahifa#readme",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"pdf",
+		"html-to-pdf",
+		"screenshot",
+		"arabic",
+		"rtl",
+		"invoice"
+	],
+	"author": {
+		"name": "Yimello LLC",
+		"email": "support@sahifa.dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gyorgy-gulyas/n8n-nodes-sahifa.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease",
+		"test": "n8n-node build && node --test test/node.test.js"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/SahifaApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Sahifa/Sahifa.node.js"
+		]
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.5",
+		"@n8n/node-cli": "*",
+		"@types/node": "^22.20.4",
+		"eslint": "9.39.4",
+		"n8n-workflow": "^2.16.0",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
