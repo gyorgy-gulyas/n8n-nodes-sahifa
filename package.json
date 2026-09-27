@@ -46,7 +46,7 @@
 		]
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.39.5",
+		"@eslint/js": "^10.0.1",
 		"@n8n/node-cli": "*",
 		"@types/node": "^22.20.4",
 		"eslint": "9.39.4",
