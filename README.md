@@ -54,6 +54,10 @@ Put `dir="rtl"` and `lang="ar"` on the `<html>` element, and wrap left-to-right 
 
 Built with the n8n node CLI and tested with n8n-workflow 2.x (n8n 1.x and later).
 
+## Author
+
+Gulyás György Tamás — [ggyt.hu](https://ggyt.hu/)
+
 ## License
 
 MIT. Sahifa is a service of Yimello LLC.
